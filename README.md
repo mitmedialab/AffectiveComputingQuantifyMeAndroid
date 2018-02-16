@@ -1,5 +1,17 @@
 # QuantifyMe Android App
+Many health recommendations aren't tuned to a specific individual. Maybe you should sleep 9 hours a night instead of the recommended 8 or walk 8,000 steps a day to be your best. A scientific way to find personalized recommendations and causal links is to conduct experiments using single-case experimental design; however, properly designed single-case experiments are not easy!
 
+The QuantifyMe platform helps researchers conduct single-case experiments in an automated and scientific manner.
+
+More information about the project and lessons learned can be found in our [paper](http://affect.media.mit.edu/pdfs/17.sanotaylor_etal_quantifyme.pdf): Sano, A., Taylor, S., Ferguson, C., Mohan, A., Picard, R. "QuantifyMe: An Automated Single-Case Experimental Design Platform," In Proc. International Conference on Wireless Mobile Communication and Healthcare (MobiHealth), Vienna, Austria, November 2017.
+
+The accompanying backend can be found here: 
+https://github.com/mitmedialab/AffectiveComputingQuantifyMeDjango
+
+## Authors:
+* Craig Ferguson
+* Sara Taylor
+* Akane Sano
 
 ## License
 The MIT License (MIT)
