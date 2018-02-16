@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/fadeyellow">
+
+    <edu.mit.media.mysnapshot.view.ViewPagerCustomDuration
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/title"
+            android:src="@drawable/art_icon"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp">
+
+            <edu.mit.media.mysnapshot.view.TintableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/backbutton"
+                android:src="@drawable/icon_cancel"
+                app:imagetint="@color/buttondisablecolor"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:padding="5dp" />
+
+            <edu.mit.media.mysnapshot.view.TintableImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:id="@+id/savebutton"
+                android:src="@drawable/icon_confirm"
+                app:imagetint="@color/buttontextcolor"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <edu.mit.media.mysnapshot.view.ScrollPageIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tpi_padding="3dp"
+        app:tpi_selectedPadding="0dp"
+        app:fpi_height="15dp"
+        app:fpi_width="15dp"
+        app:fpi_cornerRadius="18dp"
+        app:fpi_selectColor="@color/pageindicator_selected"
+        app:fpi_unselectColor="@color/pageindicator"
+        app:tpi_extraColor="@color/pageindicator_disabled"
+        app:fpi_gap="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

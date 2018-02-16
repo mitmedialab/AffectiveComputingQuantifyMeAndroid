@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NoDefaultSpinner">
+        <attr name="android:entryValues" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableIcon">
+        <attr name="tintColor" format="color" />
+        <attr name="value" format="string" />
+        <attr name="image" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="size" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="customtypeface" format="enum">
+            <enum name="Montserrat" value="0" />
+            <enum name="Montserrat_Bold" value="1" />
+            <enum name="Raleway" value="2" />
+            <enum name="Raleway_Semibold" value="3" />
+            <enum name="Raleway_Light" value="4" />
+        </attr>
+        <attr name="usehtml" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TimePickerView">
+        <attr name="small_picker" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerCustomDuration">
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollPageIndicator">
+        <attr name="tpi_padding" format="dimension" />
+        <attr name="tpi_extraPadding" format="dimension" />
+        <attr name="tpi_selectedPadding" format="dimension" />
+        <attr name="tpi_unselectedPadding" format="dimension" />
+        <attr name="tpi_extraColor" format="color" />
+        <attr name="tpi_extraRes" format="reference" />
+        <attr name="tpi_selectedInForeground" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TintableImageView">
+        <attr name="imagetint" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="ColoredRadioGroup">
+        <attr name="buttons" format="integer" />
+        <attr name="leftTint" format="reference|color" />
+        <attr name="rightTint" format="reference|color" />
+    </declare-styleable>
+
+</resources>

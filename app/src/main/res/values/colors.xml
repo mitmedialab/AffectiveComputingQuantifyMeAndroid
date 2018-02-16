@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="black" type="color">#000000</item>
+    <item name="grey" type="color">#333</item>
+    <item name="lightgrey" type="color">#888</item>
+    <item name="darkgreydark" type="color">#222</item>
+    <item name="transparent" type="color">#00000000</item>
+
+    <item name="text" type="color">#333</item>
+    <item name="textlight" type="color">@color/lightgrey</item>
+
+    <item name="disabled" type="color">@color/lightgrey</item>
+
+    <item name="bg" type="color">#ddd</item>
+    <item name="blue" type="color">#81bcdc</item>
+    <item name="green" type="color">#9fd2a7</item>
+    <item name="yellow" type="color">#ffde9b</item>
+    <item name="red" type="color">#f58d80</item>
+    <item name="purple" type="color">#b293d4</item>
+
+    <item name="darkbg" type="color">#666</item>
+    <item name="darkblue" type="color">#618ea5</item>
+    <item name="darkgreen" type="color">#729b7b</item>
+    <item name="darkyellow" type="color">#d2b162</item>
+    <item name="darkred" type="color">#d66557</item>
+    <item name="darkpurple" type="color">#8061a1</item>
+
+    <item name="fadeblue" type="color">#c5d4db</item>
+    <item name="fadegreen" type="color">#c5d1c6</item>
+    <item name="fadeyellow" type="color">#fff7e6</item>
+    <item name="fadered" type="color">#f5dfdc</item>
+    <item name="fadepurple" type="color">#c9bed4</item>
+
+    <item name="statusbar" type="color">@color/primary</item>
+    <item name="actionbar" type="color">@color/primary</item>
+    <item name="foreground" type="color">@color/primary</item>
+
+    <item name="primary" type="color">@color/blue</item>
+    <item name="primarydark" type="color">@color/darkblue</item>
+    <item name="accent" type="color">@color/red</item>
+    <item name="accentdark" type="color">@color/darkred</item>
+    <item name="accentfade" type="color">@color/fadered</item>
+    <item name="background" type="color">@color/bg</item>
+
+
+
+    <item name="question_grey" type="color">@color/disabled</item>
+    <item name="gender_male" type="color">@color/darkblue</item>
+    <item name="gender_female" type="color">@color/red</item>
+
+    <item name="radio_green" type="color">@color/green</item>
+    <item name="radio_red" type="color">@color/red</item>
+
+    <item name="pageindicator" type="color">@color/accent</item>
+    <item name="pageindicator_selected" type="color">@color/accentdark</item>
+    <item name="pageindicator_disabled" type="color">#ccc</item>
+
+</resources>

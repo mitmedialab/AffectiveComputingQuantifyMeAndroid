@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionChoiceFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/art_icon"
+            style="@style/QuestionIcon" />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:text="Configuration"
+            android:id="@+id/title"
+            style="@style/QuestionText" />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:lineSpacingMultiplier="1.15"
+            android:text="First, we need to ask you some questions to help us make your experiment."
+            android:layout_marginRight="14dp"
+            android:id="@+id/text"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/actionButton"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/upimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.15"
+                android:text="Please make sure your Jawbone information is up to date and correct!"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/button"
+            android:textSize="16sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

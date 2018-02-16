@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="timePicker" type="id" />
+    <item name="edittext" type="id" />
+    <item name="radiogroup" type="id" />
+</resources>

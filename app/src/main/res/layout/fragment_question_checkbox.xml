@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionChoiceFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/art_icon"
+            style="@style/QuestionIcon" />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:id="@+id/title"
+            style="@style/QuestionText"
+             />
+
+        <edu.mit.media.mysnapshot.view.TriggeringScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView"
+            android:fadeScrollbars="false"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:fillViewport="false">
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/terms_text"
+                android:layout_marginRight="14dp"
+                app:customtypeface="Raleway"
+                android:id="@+id/termstext" />
+        </edu.mit.media.mysnapshot.view.TriggeringScrollView>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Accept"
+            android:buttonTint="@color/checkboxcolor"
+            android:textColor="@color/checkboxcolor"
+            android:id="@+id/checkBox"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

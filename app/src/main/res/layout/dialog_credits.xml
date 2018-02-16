@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/dialog_bg"
+    android:focusable="true"
+    android:focusableInTouchMode ="true"
+    android:background="@color/white"
+    android:clickable="true">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/scrollcontent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/imageView11"
+                android:src="@drawable/art_icon"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You found the credits page!"
+                android:id="@+id/textView"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp" />
+
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Montserrat"
+                android:text="mysnapshot was brought to you by the Affective Computing group in the MIT Media Lab."
+                android:id="@+id/textView3"
+                android:lineSpacingMultiplier="1.15"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_marginBottom="40dp" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Montserrat"
+                android:text="Icons were provided by the Noun Project:"
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Montserrat"
+                android:text="Icon\nIcon\nIcon"
+                android:id="@+id/iconsCredits"
+                android:lineSpacingMultiplier="1.3"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

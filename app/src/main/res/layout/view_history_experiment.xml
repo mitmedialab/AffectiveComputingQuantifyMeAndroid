@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:contentPadding="0dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+    <FrameLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/icon"
+                    android:src="@drawable/icon_settings_activity"
+                    android:layout_marginRight="20dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <edu.mit.media.mysnapshot.view.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title"
+                        android:textSize="18sp"
+                        android:text="How does my blah affect my blah?"
+                        app:customtypeface="Montserrat"
+                        />
+
+                    <edu.mit.media.mysnapshot.view.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/day_count"
+                        android:textSize="16sp"
+                        android:text="Lasted 0 days (cancelled)"
+                        app:customtypeface="Raleway_Light"
+                        android:layout_marginTop="7dp"
+                        android:textColor="#555" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/finished"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <edu.mit.media.mysnapshot.view.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Your Result: "
+                            app:customtypeface="Raleway_Semibold"
+                             />
+                        <edu.mit.media.mysnapshot.view.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/result"
+                            android:textSize="18sp"
+                            android:text="Try to get around 9 hours of leisure time each day"
+                             />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <edu.mit.media.mysnapshot.view.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Confidence: "
+                            app:customtypeface="Raleway_Semibold"
+                            />
+                        <edu.mit.media.mysnapshot.view.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/confidence"
+                            android:textSize="18sp"
+                            android:text="97%"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/canceled"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <edu.mit.media.mysnapshot.view.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginTop="20dp"
+                        app:customtypeface="Raleway_Light"
+                        android:textStyle="italic"
+                        android:text="Canceled" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/in_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Quit"
+                        android:id="@+id/cancel_button"
+                        android:layout_gravity="right"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:background="@drawable/buttonbackground"
+                        android:layout_marginTop="20dp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/icon"
+        android:src="@drawable/art_icon" />
+
+    <edu.mit.media.mysnapshot.view.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/label"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        app:customtypeface="Montserrat"
+        android:layout_marginTop="11dp"
+        android:textSize="16sp" />
+</LinearLayout>

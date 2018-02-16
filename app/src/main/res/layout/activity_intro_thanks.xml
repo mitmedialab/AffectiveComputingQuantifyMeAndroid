@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/screencontainer"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView10"
+        android:src="@color/fadeyellow"
+        android:scaleType="fitXY"
+        android:alpha=".6" />
+
+    <FrameLayout
+        android:id="@+id/particlecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+    <LinearLayout
+        style="@style/screenContainer"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true">
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:textSize="40sp"
+            android:text="Profile\nComplete!"
+            app:customtypeface="Montserrat"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal" />
+
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Hooray! Now we have what we need to get you experimenting."
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.15"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+             />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Next, you just need to choose which experiment you want to run."
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.15"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+             />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Let&apos;s Experiment!"
+        android:id="@+id/done_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

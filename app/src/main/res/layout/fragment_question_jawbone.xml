@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionChoiceFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/icon_settings_jawbone"
+            style="@style/QuestionIcon" />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:text="Please connect your Jawbone account!"
+            android:id="@+id/title"
+            style="@style/QuestionText"
+            android:layout_marginBottom="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <edu.mit.media.mysnapshot.view.TintableImageView
+                android:id="@+id/jawboneButton"
+                android:src="@drawable/upimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="50dp"
+                app:imagetint="@color/buttonhighlightcolor"
+                android:tintMode="multiply"
+                />
+        </FrameLayout>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/doneButton"
+            android:textSize="16sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_label">SCIENCE</string>
+    <string name="app_name">SCIENCE!</string>
+    <string name="title_activity_main">SCIENCE!</string>
+
+    <string name="terms_text">
+<![CDATA[This app is a part of a research project conducted by the Affective Computing Group at the MIT Media Lab. This app seeks to help you run self-experiments to find how your behaviors influence you, and it is a part of a larger scientific research effort to understand how different people respond differently to the same behaviors.
+\n\n
+During the course of an experiment, you will be asked to change your behavior. This may be uncomfortable at times because you will be asked to change your behavior that could temporarily lead to worse wellbeing outcomes than during other periods of the experiment. You are free to drop out of the experiment at any time.
+\n\n
+This app is not a substitute for professional medical advice or common sense.
+\n\n
+Please send any questions, comments, or bug reports to sataylor@mit.edu.
+\n\n
+By clicking "I agree" you acknowledge that the answers you give to the questions in this app, along with the data collected by Jawbone will be collected for research conducted by the Affective Computing Group at MIT.
+]]>
+    </string>
+
+
+
+    <string name="race">Race / Ethnicity</string>
+    <string-array name="races">
+        <item>American Indian or Alaska Native</item>
+        <item>Hawaiian or Other Pacific Islander</item>
+        <item>Asian or Asian American</item>
+        <item>Black or African American</item>
+        <item>Hispanic or Latino</item>
+        <item>Non-Hispanic White</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="racevalues">
+        <item>nativeamerican</item>
+        <item>hawaiian</item>
+        <item>asian</item>
+        <item>black</item>
+        <item>latino</item>
+        <item>white</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="activity">
+        <item>Half Hour</item>
+        <item>One Hour</item>
+        <item>Three Hours</item>
+        <item>Eight Hours</item>
+        <item>Twelve Hours</item>
+    </string-array>
+    <string-array name="activityvalues">
+        <item>half</item>
+        <item>one</item>
+        <item>three</item>
+        <item>eight</item>
+        <item>twelve</item>
+    </string-array>
+
+    <string-array name="leisurelabels">
+        <item>None</item>
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+        <item>45 Minutes</item>
+        <item>1 Hour</item>
+        <item>1.5 Hours</item>
+        <item>2 Hours</item>
+        <item>2.5 Hours</item>
+        <item>3 Hours</item>
+        <item>4 Hours</item>
+        <item>5 or More Hours</item>
+    </string-array>
+    <string-array name="leisurevalues">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+    </string-array>
+
+    <string name="notification_title">Notification</string>
+    <string name="notification_content">Notification</string>
+    <string name="alarm_title">Alarm</string>
+
+    <string name="intro_experiment_text"><![CDATA[We will guide you through experiments so you can find out what works for <i>you</i>.]]></string>
+    <string name="sleepvariability_intro_text"><![CDATA[
+        Everyone has heard that consistent sleep schedules are important.\n\n
+        But how exactly does an inconsistent sleep schedule affect your life?\n\n
+        We\'ll help you find out just how much stress you can relieve by going to bed the same time every night.
+    ]]></string>
+    <string name="sleepduration_intro_text"><![CDATA[
+        Getting enough sleep is very important to being happy and healthy.\n\n
+        But do you know exactly how much sleep you need to be at your peak productivity?\n\n
+        We\'ll help you find out just how much sleep you need to be your most productive self.
+    ]]></string>
+    <string name="steps_intro_text"><![CDATA[
+        Getting up and getting active helps all aspects of your life.\n\n
+        But at what point does it become too much?\n\n
+        We\'ll help you find out how much activity is the best for you to get a good night\'s sleep.
+    ]]></string>
+    <string name="leisure_intro_text"><![CDATA[
+        Leisure time! Everyone loves it.\n\n
+        Too little, and you go insane. Too much, and you get nothing done. But how much is right to keep you happy?\n\n
+        We\'ll help you measure just how much "you time" you need each day to stay at your best.
+    ]]></string>
+
+    <string-array name="stage_instructions">
+        <item>We\'re figuring out your normal routine. Please keep your sleep and activity habits as routine as possible.</item>
+        <item>Let\'s start with a simple change in your routine to see what happens.</item>
+        <item>Half way there! Let\'s try another change to see its effects.</item>
+        <item>Almost done! Just this one last routine change, and we\'ll be able to calculate everything we need!</item>
+    </string-array>
+
+    <string-array name="iconcredits">
+        <item>TBD</item>
+    </string-array>
+
+
+</resources>

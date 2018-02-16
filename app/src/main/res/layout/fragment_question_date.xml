@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionDateFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/art_icon"
+            style="@style/QuestionIcon" />
+
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:text="What&apos;s your date of birth?"
+            android:id="@+id/title"
+            style="@style/QuestionText"
+             />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <edu.mit.media.mysnapshot.view.TintableImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/icon_settings_calendar"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
+                    app:imagetint="@color/buttonhighlightcolor"
+                    />
+
+                <edu.mit.media.mysnapshot.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="January 13\n1985"
+                    android:id="@+id/date"
+                    app:customtypeface="Montserrat"
+                    android:textSize="26sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

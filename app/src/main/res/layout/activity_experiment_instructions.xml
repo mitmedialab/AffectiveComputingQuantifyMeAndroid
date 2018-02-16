@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/screenContainer"
+    tools:context=".activities.questions.fragment.QuestionDateFragment"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="0dp"
+    android:id="@+id/bg"
+    android:background="@color/fadeyellow">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="13dp"
+            android:tint="@color/accent"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/button_refresh"
+            android:id="@+id/refresh" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:tint="@color/accent"
+            android:src="@drawable/button_profile"
+            android:id="@+id/settings" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:tint="@color/accent"
+            android:src="@drawable/button_home"
+            android:id="@+id/history" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_settings_sad"
+                        android:id="@+id/icon" />
+
+
+                <edu.mit.media.mysnapshot.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="How does my blah affect my blah?"
+                    app:customtypeface="Raleway"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/target_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <edu.mit.media.mysnapshot.view.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Today's Target"
+                        app:customtypeface="Montserrat_Bold"
+                        android:layout_gravity="center_horizontal"
+                        android:lineSpacingMultiplier="1.15"
+                        android:gravity="center"
+                        />
+
+                <edu.mit.media.mysnapshot.view.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/target"
+                    android:textSize="24sp"
+                    android:text="Try to go to sleep at 1:20 PM today"
+                    app:customtypeface="Raleway_Semibold"
+                    android:textColor="@color/darkpurple"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingMultiplier="1.05"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stage"
+                android:textSize="24sp"
+                android:text="Stage 0"
+                android:layout_marginBottom="10dp"
+                app:customtypeface="Montserrat_Bold"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stage_instructions"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="We're figuring out your normal routine. Please keep your sleep and activity habits as routine as possible."
+                app:customtypeface="Raleway"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
+                app:customtypeface="Montserrat_Bold"
+                android:text="Stage Progress"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.15"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:dividerPadding="1dp"
+                android:padding="1dp"
+                android:background="@color/yellow"
+                android:elevation="24dp"
+                android:id="@+id/progressgrid" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:dividerPadding="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="1dp"
+                android:background="@color/yellow"
+                android:elevation="24dp"
+                android:id="@+id/progressgrid_secondrow" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

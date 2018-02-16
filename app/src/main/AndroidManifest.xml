@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.mit.media.mysnapshot" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_label"
+        android:name=".MyApplication"
+        android:theme="@style/BaseStyle"
+        tools:replace="android:icon,android:label" >
+        <meta-data
+            tools:replace="android:value"
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Settings" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.IntroActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.IntroThanksActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <activity
+            android:name=".activities.ExperimentChooseActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".activities.ExperimentIntroActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.ExperimentConfigActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.ExperimentCreatedActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.ExperimentCheckinActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".activities.ExperimentInstructionsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.ExperimentCompleteActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.mit.media.mysnapshot.activities.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <activity
+            android:name="com.jawbone.upplatformsdk.oauth.OauthWebViewActivity">
+            <intent-filter>
+                <action android:name="com.jawbone.upplatformsdk.oauth.OauthWebViewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver
+            android:name="edu.mit.media.mysnapshot.notifications.AlarmReceiver"
+            android:exported="true"
+            android:priority="1000" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="edu.mit.media.mysnapshot.makenotificationsplz" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

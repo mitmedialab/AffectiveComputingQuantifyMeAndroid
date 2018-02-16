@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.questions.fragment.QuestionDateFragment"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center|top"
+    android:background="@color/fadegreen">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/art_icon"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:textSize="24sp"
+                android:text="Quantify Me"
+                app:customtypeface="Montserrat"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Raleway_Light"
+                android:textSize="22sp"
+                android:text="Welcome!"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Raleway_Light"
+                android:textSize="18sp"
+                android:text="Everyone needs different amounts of sleep or different activity levels. What works for others may not work for you."
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Raleway_Light"
+                android:textSize="18sp"
+                android:text="@string/intro_experiment_text"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:usehtml="true"
+                />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="Raleway_Light"
+                android:textSize="18sp"
+                android:text="Before we can start, we will ask a few questions to get to know you better."
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center" />
+
+            <edu.mit.media.mysnapshot.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view2"
+                app:customtypeface="Raleway_Light"
+                android:textSize="20sp"
+                android:text="For science!"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Started!"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

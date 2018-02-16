@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionChoiceFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/art_icon"
+            style="@style/QuestionIcon" />
+
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:text="Question Text"
+            android:id="@+id/title"
+            style="@style/QuestionText"
+             />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <edu.mit.media.mysnapshot.view.TimePickerView
+                android:id="@+id/notificationTimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:buttonTint="@color/checkboxcolor"
+            android:textColor="@color/checkboxcolor"
+            android:id="@+id/notificationCheckBox"
+            android:checked="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/doneButton"
+            android:textSize="16sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="40dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

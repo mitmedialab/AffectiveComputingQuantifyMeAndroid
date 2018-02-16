@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/screencontainer"
+    android:layout_height="match_parent"
+    android:background="@color/fadegreen">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/button_refresh"
+            android:id="@+id/refresh" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/button_profile"
+            android:id="@+id/settings" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/button_home"
+            android:id="@+id/history" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/screenContainer"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="18sp"
+            android:text="Your experiment is being created. Check back tomorrow morning (and every morning!) to check in and see what to do."
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.15"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

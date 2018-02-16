@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/questionContainer"
+    tools:context=".activities.questions.fragment.QuestionChoiceFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/art_icon"
+            style="@style/QuestionIcon" />
+
+        <edu.mit.media.mysnapshot.view.FontTextView
+            android:text="Which of these describes you best?"
+            android:id="@+id/title"
+            style="@style/QuestionText" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <edu.mit.media.mysnapshot.view.NoDefaultSpinner
+                android:id="@+id/spinner"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="80dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
