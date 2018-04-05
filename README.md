@@ -3,7 +3,10 @@ Many health recommendations aren't tuned to a specific individual. Maybe you sho
 
 The QuantifyMe platform helps researchers conduct single-case experiments in an automated and scientific manner.
 
-More information about the project and lessons learned can be found in our [paper](http://affect.media.mit.edu/pdfs/17.sanotaylor_etal_quantifyme.pdf): Sano, A., Taylor, S., Ferguson, C., Mohan, A., Picard, R. "QuantifyMe: An Automated Single-Case Experimental Design Platform," In Proc. International Conference on Wireless Mobile Communication and Healthcare (MobiHealth), Vienna, Austria, November 2017.
+More information about the project and lessons learned can be found in our papers:
+
+* Sano, A., Taylor, S., Ferguson, C., Mohan, A., Picard, R. "QuantifyMe: An Automated Single-Case Experimental Design Platform," In Proc. International Conference on Wireless Mobile Communication and Healthcare (MobiHealth), Vienna, Austria, November 2017. [PDF](http://affect.media.mit.edu/pdfs/17.sanotaylor_etal_quantifyme.pdf)
+* Taylor, S., Sano, A., Ferguson, C., Mohan, A., Picard, R. "QuantifyMe: An Open-Source Automated Single-Case Experimental Design Platform," Sensors, April 2018. [PDF](https://dam-prod.media.mit.edu/x/2018/04/05/18.TaylorSano-QuantifyMe.pdf)
 
 The accompanying backend can be found here: 
 https://github.com/mitmedialab/AffectiveComputingQuantifyMeDjango
